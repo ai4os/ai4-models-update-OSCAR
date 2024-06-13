@@ -1,0 +1,11 @@
+functions:
+  oscar:
+  - oscar-ai4eosc-cluster:
+      name: base-name
+      memory: 2Gi
+      cpu: '1.0'
+      vo: vo.ai4eosc.eu
+      image: base-image
+      log_level: CRITICAL
+      script: script.sh
+      allowed_users: []
