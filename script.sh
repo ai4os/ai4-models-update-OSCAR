@@ -1,3 +1,5 @@
+echo "[*] Using DEEPaaS version $(deepaas-run --version)"
+echo "[*] Using Python version $(python3 --version)"
 python - << EOF
 import json
 import base64

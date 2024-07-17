@@ -44,7 +44,6 @@ connect_options = {'cluster_id':'oscar-ai4eosc-cluster',
 
 try:
     oscar_client = Client(options = connect_options)
-    print("Client created succesfully")
 except ValueError as ve:
     print("[!] Error creating OSCAR client: ", ve)
     exit(1)
@@ -71,5 +70,4 @@ except HTTPError as e:
                                             service_metadata["metadata"]["resources"]["memory"], 
                                             service_metadata["metadata"]["sources"]["docker_registry_repo"])
         response = oscar_client.create_service(service_def)
-        print(response)
 
